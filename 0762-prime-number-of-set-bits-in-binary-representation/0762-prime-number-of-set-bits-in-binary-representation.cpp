@@ -2,7 +2,7 @@ class Solution {
 public:
     int countPrimeSetBits(int left, int right) {
         int count = 0;
-        
+        // Gemini results!!! (only for testing)
         // 20'ye kadar olan asal sayıların bitmask hali:
         // (1 << 2) | (1 << 3) | (1 << 5) | ... şeklinde
         // Bu sayı ikilik sistemde asalların olduğu pozisyonlarda 1 içerir.
