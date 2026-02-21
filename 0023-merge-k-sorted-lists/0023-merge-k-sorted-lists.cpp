@@ -15,17 +15,20 @@
 class Solution {
 public:
     ListNode* mergeKLists(vector<ListNode*>& lists) {
-        
-
         if (lists.size() == 0) {
             return nullptr;
         }
-        
-        ListNode* currentList = lists[0];
-        for (int i=1; i<lists.size(); i++) {
-            currentList = mergeLists(currentList, lists[i]);
+
+        if (lists.size() == 2) {
+            return mergeLists(lists[0], lists[1]);
         }
-        return currentList;
+
+        while (lists.size() != 1) {
+            lists.push_back(mergeLists(lists[0], lists[1]));
+            lists.erase(lists.begin());
+            lists.erase(lists.begin());
+        }
+        return lists[0];
     }
 
     /*
