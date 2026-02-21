@@ -48,11 +48,7 @@ public:
         
         while(l1 != nullptr || l2 != nullptr) {
             if (l1 == nullptr || l2 == nullptr) {
-                ListNode *notEmpty = l1 != nullptr ? l1 : l2;
-                if (root == nullptr)
-                    return notEmpty;
-                
-                tail->next = notEmpty;
+                tail->next = (l1 != nullptr ? l1 : l2);
                 return root;                
             }
 
@@ -60,9 +56,7 @@ public:
             smaller = isFirstSmaller ? l1 : l2;
             ListNode *next = smaller->next;
             tail = push_back(tail, smaller);
-            if (root == nullptr) {
-                root = tail;
-            }
+            
             if (isFirstSmaller) {
                 l1 = next;
             } else {
