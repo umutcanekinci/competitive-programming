@@ -19,14 +19,14 @@ public:
             return nullptr;
         }
 
-        if (lists.size() == 2) {
-            return mergeLists(lists[0], lists[1]);
-        }
-
         while (lists.size() != 1) {
             lists.push_back(mergeLists(lists[0], lists[1]));
             lists.erase(lists.begin());
             lists.erase(lists.begin());
+
+            if (lists.size() == 2) {
+                return mergeLists(lists[0], lists[1]);
+        }
         }
         return lists[0];
     }
