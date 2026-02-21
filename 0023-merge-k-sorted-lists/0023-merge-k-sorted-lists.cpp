@@ -44,13 +44,10 @@ public:
         while(l1 != nullptr || l2 != nullptr) {
             if (l1 == nullptr || l2 == nullptr) {
                 ListNode *notEmpty = l1 != nullptr ? l1 : l2;
-                while(notEmpty != nullptr) {
-                    ListNode *next=notEmpty->next;
-                    tail = push_back(tail, notEmpty);
-                    if (root == nullptr) {
-                        root = tail;
-                    }
-                    notEmpty = next;
+                if (root == nullptr) {
+                    return notEmpty;
+                } else {
+                    tail->next = notEmpty;
                 }
                 return root;
             }
@@ -74,18 +71,6 @@ public:
     ListNode *push_back(ListNode *tail, ListNode *node) {
         node->next = nullptr;
 
-        if (tail == nullptr) {
-            tail = node;
-            return tail;
-        }
-
-        tail->next = node;
-        return tail->next;
-    }
-
-    ListNode *push_back(ListNode *tail, int val) {
-        ListNode *node = new ListNode(val);
-        
         if (tail == nullptr) {
             tail = node;
             return tail;
