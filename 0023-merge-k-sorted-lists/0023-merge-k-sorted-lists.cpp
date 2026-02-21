@@ -15,6 +15,9 @@
 class Solution {
 public:
     ListNode* mergeKLists(vector<ListNode*>& lists) {
+        ios_base::sync_with_stdio(false);
+        cin.tie(NULL);
+
         if (lists.size() == 0) {
             return nullptr;
         }
