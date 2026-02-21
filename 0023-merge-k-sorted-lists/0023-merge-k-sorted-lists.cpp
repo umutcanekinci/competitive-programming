@@ -44,12 +44,11 @@ public:
         while(l1 != nullptr || l2 != nullptr) {
             if (l1 == nullptr || l2 == nullptr) {
                 ListNode *notEmpty = l1 != nullptr ? l1 : l2;
-                if (root == nullptr) {
+                if (root == nullptr)
                     return notEmpty;
-                } else {
-                    tail->next = notEmpty;
-                }
-                return root;
+                
+                tail->next = notEmpty;
+                return root;                
             }
 
             bool isFirstSmaller = (l1->val < l2->val); 
