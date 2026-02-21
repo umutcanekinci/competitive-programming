@@ -37,9 +37,14 @@ public:
         will create new node for time complexity fit.
     */
     ListNode *mergeLists(ListNode *l1, ListNode *l2) {
-        ListNode *root = nullptr;
-        ListNode *tail = nullptr;
-        ListNode *smaller;
+        if (l1 == nullptr || l2 == nullptr) {
+            return l1 == nullptr ? l2 : l1;
+        }
+
+        ListNode *smaller = l1->val < l2->val ? l1 : l2;
+        ListNode *root = smaller;
+        ListNode *tail = smaller;
+        
         
         while(l1 != nullptr || l2 != nullptr) {
             if (l1 == nullptr || l2 == nullptr) {
