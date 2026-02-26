@@ -5,7 +5,7 @@ public:
         int size = s.size();
         while (isOne(s)) {
             if (isEven(s)) {
-                divideByTwo(s);
+                divideByTwo(s, size);
             } else {
                 size += addOne(s, size);
             }
@@ -40,10 +40,8 @@ public:
         return 1;
     }
 
-    void divideByTwo(string &s) {
-        int l = s.size();
-        int starting = l-2;
-        for(int i=starting; i>=0; i--) {
+    void divideByTwo(string &s, int size) {
+        for(int i=size-2; i>=0; i--) {
             s[i+1] = s[i];
         }
         s[0] = '0';
