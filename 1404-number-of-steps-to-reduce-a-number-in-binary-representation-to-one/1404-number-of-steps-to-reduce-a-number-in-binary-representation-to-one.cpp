@@ -2,11 +2,11 @@ class Solution {
 public:
     int numSteps(string s) {
         int index = 0;
-        while (!isOne(s)) {
-            if (!isEven(s)) {
-                addOne(s);
-            } else {
+        while (isOne(s)) {
+            if (isEven(s)) {
                 divideByTwo(s);
+            } else {
+                addOne(s);
             }
             index++;
         }
@@ -16,10 +16,10 @@ public:
     bool isOne(string &s) {
         for (int i=0; i<s.size()-1; i++) {
             if (s[i] == '1') {
-                return false;
+                return true;
             }
         }
-        return true;
+        return false;
     }
 
     bool isEven(string &s) {
