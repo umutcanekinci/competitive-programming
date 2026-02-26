@@ -2,14 +2,11 @@ class Solution {
 public:
     int numSteps(string s) {
         int index = 0;
-        cout << "Number: " << s << endl;
         while (!isOne(s)) {
             if (!isEven(s)) {
                 addOne(s);
-                cout << "Plus one: " << s << endl;
             } else {
                 divideByTwo(s);
-                cout << "Divide: " << s << endl;
             }
             index++;
         }
@@ -44,9 +41,6 @@ public:
     }
 
     void divideByTwo(string &s) {
-        // This can't be used with strings!
-        // s = s >> 1;
-        
         int l = s.size();
         int starting = l-2;
         for(int i=starting; i>=0; i--) {
