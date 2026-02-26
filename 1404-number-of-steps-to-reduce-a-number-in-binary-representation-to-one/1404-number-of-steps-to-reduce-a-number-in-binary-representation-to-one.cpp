@@ -7,8 +7,7 @@ public:
             if (isEven(s)) {
                 divideByTwo(s);
             } else {
-                size = s.size();
-                addOne(s, size);
+                size = addOne(s, size);
             }
             index++;
         }
@@ -28,16 +27,17 @@ public:
         return s[s.size()-1] == '0';
     }
 
-    void addOne(string &s, int size) {
+    bool addOne(string &s, int size) {
         for(int i=size-1; i>=0; i--) {
             char ch = s[i];
             if (ch == '0') {
                 s[i] = '1';
-                return;
+                return 0;
             }
             s[i] = '0';
         }
         s = '1' + s;
+        return 1;
     }
 
     void divideByTwo(string &s) {
@@ -48,39 +48,4 @@ public:
         }
         s[0] = '0';
     }
-
-    // int numSteps(string s) {
-    //     return numSteps(binaryToDecimal(s));
-    // }
-
-    // long long binaryToDecimal(string s) {
-    //     long long result = 0;
-
-    //     int l = s.size();
-    //     for (int i=l-1; i>=0; i--) {
-    //         char ch = s[i];
-    //         result += (ch == '0') ? 0 : pow(2, l-1-i);
-    //     }
-    //     return result;
-    // }
-
-    // long long pow(int base, int power) {
-    //     if (power <= 0) {
-    //         return 1;
-    //     }
-    //     return pow(base, power - 1) * base;
-    // }
-
-    // int numSteps(int n) {
-    //     int i = 0;
-    //     while (n != 1) {
-    //         if (n % 2) {
-    //             n++;
-    //         } else {
-    //             n /= 2;
-    //         }
-    //         i++;
-    //     }
-    //     return i;
-    // }
 };
