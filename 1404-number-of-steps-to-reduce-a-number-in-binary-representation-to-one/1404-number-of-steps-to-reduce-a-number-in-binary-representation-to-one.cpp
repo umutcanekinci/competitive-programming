@@ -14,7 +14,7 @@ public:
     }
 
     bool isOne(string &s) {
-        return s.substr(0, s.size()-1).contains('1');
+        return s.find('1') != s.size()-1;
     }
 
     bool isEven(string &s) {
