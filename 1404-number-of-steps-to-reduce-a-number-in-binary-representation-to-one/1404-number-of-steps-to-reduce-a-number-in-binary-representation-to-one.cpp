@@ -3,8 +3,8 @@ public:
     int numSteps(string s) {
         int index = 0;
         int size = s.size();
-        while (isOne(s)) {
-            if (isEven(s)) {
+        while (isOne(s, size)) {
+            if (isEven(s, size)) {
                 divideByTwo(s, size);
             } else {
                 size += addOne(s, size);
@@ -14,8 +14,8 @@ public:
         return index;
     }
 
-    bool isOne(string &s) {
-        for (int i=0; i<s.size()-1; i++) {
+    bool isOne(string &s, int size) {
+        for (int i=0; i<size-1; i++) {
             if (s[i] == '1') {
                 return true;
             }
@@ -23,8 +23,8 @@ public:
         return false;
     }
 
-    bool isEven(string &s) {
-        return s[s.size()-1] == '0';
+    bool isEven(string &s, int size) {
+        return s[size-1] == '0';
     }
 
     bool addOne(string &s, int size) {
