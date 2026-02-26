@@ -7,7 +7,7 @@ public:
             if (isEven(s)) {
                 divideByTwo(s);
             } else {
-                size = addOne(s, size);
+                size += addOne(s, size);
             }
             index++;
         }
