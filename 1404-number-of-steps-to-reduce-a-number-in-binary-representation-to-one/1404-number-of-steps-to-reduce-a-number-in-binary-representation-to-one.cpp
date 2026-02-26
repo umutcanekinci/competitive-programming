@@ -14,12 +14,7 @@ public:
     }
 
     bool isOne(string &s) {
-        for (int i=0; i<s.size()-1; i++) {
-            if (s[i] == '1') {
-                return true;
-            }
-        }
-        return false;
+        return s.substr(0, s.size()-1).contains('1');
     }
 
     bool isEven(string &s) {
