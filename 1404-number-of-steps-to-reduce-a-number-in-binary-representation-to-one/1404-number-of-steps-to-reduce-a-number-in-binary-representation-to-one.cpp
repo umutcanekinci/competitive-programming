@@ -33,9 +33,9 @@ public:
             if (ch == '0') {
                 s[i] = '1';
                 return;
-            } else {
-                s[i] = '0';
             }
+            s[i] = '0';
+            
         }
         s = '1' + s;
     }
