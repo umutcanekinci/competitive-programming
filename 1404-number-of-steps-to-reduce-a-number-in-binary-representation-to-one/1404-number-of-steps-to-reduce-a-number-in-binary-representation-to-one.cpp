@@ -2,11 +2,13 @@ class Solution {
 public:
     int numSteps(string s) {
         int index = 0;
+        int size = s.size();
         while (isOne(s)) {
             if (isEven(s)) {
                 divideByTwo(s);
             } else {
-                addOne(s);
+                size = s.size();
+                addOne(s, size);
             }
             index++;
         }
@@ -26,8 +28,7 @@ public:
         return s[s.size()-1] == '0';
     }
 
-    void addOne(string &s) {
-        int size = s.size();
+    void addOne(string &s, int size) {
         for(int i=size-1; i>=0; i--) {
             char ch = s[i];
             if (ch == '0') {
@@ -35,7 +36,6 @@ public:
                 return;
             }
             s[i] = '0';
-            
         }
         s = '1' + s;
     }
