@@ -52,4 +52,8 @@ Continuously learning and optimizing code, one problem at a time.
 | [0181-employees-earning-more-than-their-managers](https://github.com/umutcanekinci/competitive-programming/tree/main/0181-employees-earning-more-than-their-managers/) | Easy |
 | [0182-duplicate-emails](https://github.com/umutcanekinci/competitive-programming/tree/main/0182-duplicate-emails/) | Easy |
 | [0183-customers-who-never-order](https://github.com/umutcanekinci/competitive-programming/tree/main/0183-customers-who-never-order/) | Easy |
+## String
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1784-check-if-binary-string-has-at-most-one-segment-of-ones](https://github.com/umutcanekinci/competitive-programming/tree/main/1784-check-if-binary-string-has-at-most-one-segment-of-ones/) | Easy |
 <!---LeetCode Topics End-->
