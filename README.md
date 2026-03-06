@@ -43,3 +43,11 @@ Feel free to check out my detailed stats and badges on the platforms below:
 * [Codewars Profile]([https://www.codewars.com/users/umutcanekinci])
 
 Continuously learning and optimizing code, one problem at a time.
+
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## Database
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0181-employees-earning-more-than-their-managers](https://github.com/umutcanekinci/competitive-programming/tree/main/0181-employees-earning-more-than-their-managers/) | Easy |
+<!---LeetCode Topics End-->
