@@ -2,10 +2,10 @@ class Solution {
 public:
     bool checkOnesSegment(string s) {
         return iterative(s, s.size());
-        // return rec_solution(s, 0, s.size(), false, false);
+        // return recursive(s, 0, s.size(), false, false);
     }
 
-    bool rec_solution(string &s, int index, int length, bool isOne, bool isFinished) {
+    bool recursive(string &s, int index, int length, bool isOne, bool isFinished) {
         char ch = s[index];
 
         if (isOne && ch == '0') {
@@ -18,14 +18,14 @@ public:
             return false;
         }
         if (index < length-1) {
-            return rec_solution(s, index+1, length, (ch == '1'), isFinished);
+            return recursive(s, index+1, length, (ch == '1'), isFinished);
         }
         return true;
     
     
     }
 
-    bool iterative(string s, int l) {
+    bool iterative(string &s, int l) {
         bool found = false;
         bool before = false;
         bool current;
