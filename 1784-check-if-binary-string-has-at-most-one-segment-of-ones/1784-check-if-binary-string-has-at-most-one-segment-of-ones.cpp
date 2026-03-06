@@ -1,10 +1,11 @@
 class Solution {
 public:
     bool checkOnesSegment(string s) {
-        return solution(s, 0, s.size(), false, false);
+        return iterative(s, s.size());
+        // return rec_solution(s, 0, s.size(), false, false);
     }
 
-    bool solution(string &s, int index, int length, bool isOne, bool isFinished) {
+    bool rec_solution(string &s, int index, int length, bool isOne, bool isFinished) {
         char ch = s[index];
 
         if (isOne && ch == '0') {
@@ -17,7 +18,31 @@ public:
             return false;
         }
         if (index < length-1) {
-            return solution(s, index+1, length, (ch == '1'), isFinished);
+            return rec_solution(s, index+1, length, (ch == '1'), isFinished);
+        }
+        return true;
+    
+    
+    }
+
+    bool iterative(string s, int l) {
+        bool found = false;
+        bool before = false;
+        bool current;
+        for(int i=0; i<l; i++) {
+            char ch = s[i];
+            current = ch == '1';
+            if (current) {
+                if (found) {
+                    return false;
+                }
+                
+            } else {
+                if (before) {
+                    found = true;
+                }
+            }
+            before = current;
         }
         return true;
     }
