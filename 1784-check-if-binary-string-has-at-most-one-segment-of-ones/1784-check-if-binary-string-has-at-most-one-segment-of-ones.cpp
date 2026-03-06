@@ -21,8 +21,6 @@ public:
             return recursive(s, index+1, length, (ch == '1'), isFinished);
         }
         return true;
-    
-    
     }
 
     bool iterative(string &s, int l) {
@@ -32,11 +30,8 @@ public:
         for(int i=0; i<l; i++) {
             char ch = s[i];
             current = ch == '1';
-            if (current) {
-                if (found) {
-                    return false;
-                }
-                
+            if (current && found) {
+                return false;
             } else {
                 if (before) {
                     found = true;
