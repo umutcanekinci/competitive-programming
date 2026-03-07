@@ -4,6 +4,7 @@ public:
         1. Make odds 1 evens 0
         2. Make odds 0 evens 1
     */
+
 int minFlips(string s) {
         int n = s.size();
         string doubled = s + s;
@@ -35,4 +36,26 @@ int minFlips(string s) {
         
         return res;
     }
+
+    // int minFlips(string s) {
+    //     int l = s.size();
+    //     int val = l;
+    //     int startsWith[2] = {0, 0};
+        
+    //     for (int i=0; i<l; i++) {
+    //         startsWith[0] = 0;
+    //         startsWith[1] = 0;
+            
+    //         for(int j=i; j<i+l; j++) {
+    //             char ch = s[j%l];
+    //             if(j%2) {
+    //                 startsWith[ch == '0']++;
+    //             } else {
+    //                 startsWith[ch == '1']++;
+    //             }
+    //         }           
+    //         val = min({val, startsWith[0], startsWith[1]});
+    //     }
+    //     return val;
+    // }
 };
