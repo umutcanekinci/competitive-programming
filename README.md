@@ -55,11 +55,13 @@ Continuously learning and optimizing code, one problem at a time.
 ## String
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0005-longest-palindromic-substring](https://github.com/umutcanekinci/competitive-programming/tree/main/0005-longest-palindromic-substring/) | Medium |
 | [1784-check-if-binary-string-has-at-most-one-segment-of-ones](https://github.com/umutcanekinci/competitive-programming/tree/main/1784-check-if-binary-string-has-at-most-one-segment-of-ones/) | Easy |
 | [1888-minimum-number-of-flips-to-make-the-binary-string-alternating](https://github.com/umutcanekinci/competitive-programming/tree/main/1888-minimum-number-of-flips-to-make-the-binary-string-alternating/) | Medium |
 ## Dynamic Programming
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0005-longest-palindromic-substring](https://github.com/umutcanekinci/competitive-programming/tree/main/0005-longest-palindromic-substring/) | Medium |
 | [1888-minimum-number-of-flips-to-make-the-binary-string-alternating](https://github.com/umutcanekinci/competitive-programming/tree/main/1888-minimum-number-of-flips-to-make-the-binary-string-alternating/) | Medium |
 ## Sliding Window
 | Problem Name | Difficulty |
@@ -72,5 +74,10 @@ Continuously learning and optimizing code, one problem at a time.
 ## Two Pointers
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0005-longest-palindromic-substring](https://github.com/umutcanekinci/competitive-programming/tree/main/0005-longest-palindromic-substring/) | Medium |
 | [0019-remove-nth-node-from-end-of-list](https://github.com/umutcanekinci/competitive-programming/tree/main/0019-remove-nth-node-from-end-of-list/) | Medium |
+## Manacher
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0005-longest-palindromic-substring](https://github.com/umutcanekinci/competitive-programming/tree/main/0005-longest-palindromic-substring/) | Medium |
 <!---LeetCode Topics End-->
