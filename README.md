@@ -65,4 +65,12 @@ Continuously learning and optimizing code, one problem at a time.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1888-minimum-number-of-flips-to-make-the-binary-string-alternating](https://github.com/umutcanekinci/competitive-programming/tree/main/1888-minimum-number-of-flips-to-make-the-binary-string-alternating/) | Medium |
+## Linked List
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0019-remove-nth-node-from-end-of-list](https://github.com/umutcanekinci/competitive-programming/tree/main/0019-remove-nth-node-from-end-of-list/) | Medium |
+## Two Pointers
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0019-remove-nth-node-from-end-of-list](https://github.com/umutcanekinci/competitive-programming/tree/main/0019-remove-nth-node-from-end-of-list/) | Medium |
 <!---LeetCode Topics End-->
